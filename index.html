@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="https://e7.pngegg.com/pngimages/306/114/png-clipart-point-blank-heroes-of-newerth-league-of-legends-garena-free-fire-warcraft-iii-reign-of-chaos-league-of-legends-game-emblem.png" type="image/x-icon">
+    <title>Y8</title>
+    <style>
+        #myGame{
+            position: absolute;
+            background: #3e3f46;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+        }
+        #btn{
+            position: absolute;
+            width: 100px;
+            height: 10px;
+            background: red;
+            bottom: 10px;
+            left: 10px;
+
+        }
+        #lose{
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            right: 40%;
+            bottom: 40%;
+            background: cadetblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial;
+            font-size: 30px;
+            color: #cccccc;
+            font-weight: bold;
+            flex-direction: column;
+            transition: 0.25s;
+            transform: translateY(-300%);
+        }
+        .bx{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .bx:hover{
+            background: coral;
+            color: #3e3f46;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myGame" width="1250px" height="550px" style="border: 1px solid ">
+
+    </canvas><div id="btn"></div>
+    <div id="lose">
+        <i class='bx bx-x'></i>
+        Lose
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
