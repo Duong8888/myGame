@@ -1,6 +1,7 @@
 alert("Dùng A D để di chuyển hoặc < > để di chuyển :V");
 
 var canvas = document.querySelector('#myGame');
+canvas.style.animation = "colorBg 10s infinite linear";
 var context = canvas.getContext('2d');
 var btn = document.querySelector('#btn');
 var lose = document.querySelector('#lose');
@@ -8,7 +9,7 @@ var bx = document.querySelector('.bx');
 var x = 20;
 var y = 20;
 
-var d = 20;
+var d = canvas.clientWidth-20;
 var z = 20;
 
 var dd = 0.2;
@@ -78,6 +79,7 @@ addEventListener('keydown',function (e){
         }
     }
 });
+
 bx.addEventListener('click',function (){
     lose.style.transform = 'translateY(-300%)';
 });
